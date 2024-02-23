@@ -1,0 +1,44 @@
+@import 'src/styles/variables.scss';
+
+.section {
+  background-color: $white-color;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 63px);
+    text-align: center;
+    color: $primary-color;
+
+    .icon {
+      filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.25));
+      animation: flicker 1.5s infinite alternate;
+      color: $light-red;
+      font-weight: 500;
+    }
+  }
+
+  h1 {
+    font-size: $font-size-xxl;
+    line-height: 1;
+    margin-top: 28px;
+  }
+
+  a {
+    margin-top: 10px;
+    font-size: $font-size-lg;
+    color: $primary-color;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

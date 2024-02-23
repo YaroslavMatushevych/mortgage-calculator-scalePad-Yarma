@@ -1,9 +1,14 @@
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import React from 'react';
 
-import '@/styles/globals.css';
+import '../styles/globals.scss';
+
+import Header from '@/components/Header';
 
 import { siteConfig } from '@/constant/config';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -28,7 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
