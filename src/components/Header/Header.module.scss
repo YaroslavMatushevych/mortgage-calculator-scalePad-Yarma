@@ -1,0 +1,22 @@
+@import 'src/styles/variables.scss';
+
+.header {
+  background-color: $white-color;
+  box-shadow: rgba(192, 206, 211, 0.3) 0px 6px 5px -2px;
+  min-height: 63px;
+  display: flex;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $padding-md;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    overflow: visible;
+    padding: 0px;
+    animation: auto ease 0s 1 normal none running none;
+  }
+}
