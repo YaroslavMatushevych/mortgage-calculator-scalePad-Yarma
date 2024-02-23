@@ -1,0 +1,10 @@
+@import 'src/styles/variables.scss';
+
+.logo {
+  a {
+    color: $primary-color;
+    font-size: $font-size-lg;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
