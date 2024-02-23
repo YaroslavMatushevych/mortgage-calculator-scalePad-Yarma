@@ -1,0 +1,5 @@
+:root {
+  /* #start  /**======== Primary Color =========== */
+  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
+  /* #end  /**======== Primary Color =========== */
+}
