@@ -1,0 +1,28 @@
+@import 'src/styles/variables.scss';
+
+.navLink {
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: all;
+  box-shadow: transparent 0px -2px inset;
+  transition: color 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+
+.active {
+  color: $dark-blue-color;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+    // box-shadow: $blue-color 0px -2px inset;
+    text-decoration: underline;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+}
