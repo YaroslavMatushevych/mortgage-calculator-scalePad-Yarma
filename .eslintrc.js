@@ -24,6 +24,7 @@ module.exports = {
       { props: 'never', children: 'never' },
     ],
 
+    '@typescript-eslint/ban-ts-comment': 'off',
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
