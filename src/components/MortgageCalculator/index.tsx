@@ -24,6 +24,7 @@ import {
 } from '@/types';
 
 const MortgageCalculator: React.FC = () => {
+  // validation with zod or you is good. Still hesitate about usage and potencial complexity for new devs taking it
   const {
     register,
     handleSubmit,
@@ -39,11 +40,13 @@ const MortgageCalculator: React.FC = () => {
 
     const result = await calculateMortgageOnServer(data);
 
+    // later we can create custom notification
     if (!result.success) {
       invokeToastNotification(result.error as string);
       return;
     }
 
+    // this part I would refactor later to format the whole payment line
     const formatedAmount = formatCurrency(result.data.payment);
     result.data.payment_schedule =
       result.data.payment_schedule === 'accel-bi-weekly'
@@ -83,6 +86,7 @@ const MortgageCalculator: React.FC = () => {
           />
         ))}
 
+        {/* place to refactor later, maybe move to another component or at least add line formatting func */}
         <div className={styles.resultContainer}>
           <div className={styles.labelResultContainer}>
             <span>=</span>

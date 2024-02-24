@@ -4,6 +4,7 @@ import { UseFormRegister } from 'react-hook-form';
 
 import styles from './Input.module.scss';
 
+// props and their order is matter of refactor later to easier edit it later
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   type?: string;

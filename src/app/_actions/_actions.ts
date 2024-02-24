@@ -2,6 +2,7 @@
 
 // Used native fetch instead of axios because of issues in server actions with testing
 // it's quite new feature so sometimes happens unexpected issues with supporting
+// These logic could be later moved to different place, might be service folder.
 import { API_URL } from '@/constant/env';
 
 import { CalculatorState, mortgageCalculatorSchema } from '@/types';

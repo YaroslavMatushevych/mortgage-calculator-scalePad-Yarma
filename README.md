@@ -1,5 +1,7 @@
 # Mortgage Calculator - ScalePad - Yaroslav Matushevych
 
+![alt text](<Screenshot 2024-02-23 at 17.14.11.png>)
+
 ## Features
 
 This project is 🔋 battery packed with:
@@ -13,11 +15,16 @@ This project is 🔋 battery packed with:
 - 💖 Prettier — Format your code consistently
 - 🐶 Husky & Lint Staged — Run scripts on your staged files before they are committed
 - 🤖 Conventional Commit Lint — Make sure you & your teammates follow conventional commit
-- ⏰ Release Please — Generate your changelog by activating the `release-please` workflow
 - 👷 Github Actions — Lint your code on PR
-- 🚘 Automatic Branch and Issue Autolink — Branch will be automatically created on issue **assign**, and auto linked on PR
-- 🔥 Snippets — A collection of useful snippets
 - 🗺 Site Map — Automatically generate sitemap.xml
+
+## Opinion, tech choices.
+
+Using best sides of react and next, combined static renders, server side api calls and user interection on the client.
+Despite I used react-hook-forms every time when I use I feel that working without this library make life easier for every developer, so that's the matter of team discussion. Adding linter, precommit checks helps to keep code clean and avoid unexpected issues.
+SCSS modules is a good choice for splitting scss, make bundle smaller, and styles encapsulating.
+You can easily use utils, types, mocks, constants and reuse components thanks to the decomposition of components.
+Feel free to reach out for any clarifications or suggestions you may have.
 
 ## Getting Started
 
