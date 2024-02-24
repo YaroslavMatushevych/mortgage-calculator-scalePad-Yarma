@@ -20,11 +20,9 @@ This project is 🔋 battery packed with:
 
 ## Opinion, tech choices.
 
-Using best sides of react and next, combined static renders, server side api calls and user interection on the client.
-Despite I used react-hook-forms every time when I use I feel that working without this library make life easier for every developer, so that's the matter of team discussion. Adding linter, precommit checks helps to keep code clean and avoid unexpected issues.
-SCSS modules is a good choice for splitting scss, make bundle smaller, and styles encapsulating.
-You can easily use utils, types, mocks, constants and reuse components thanks to the decomposition of components.
-Feel free to reach out for any clarifications or suggestions you may have.
+Leveraging the best aspects of React and Next.js, this approach combines static rendering, server-side API calls, and client-side user interactions.
+Teck Stack opinions: Despite my frequent use of React Hook Form, I've come to feel that omitting this library could simplify the development process for every developer, making it a subject for team discussion. Incorporating linters and pre-commit checks helps maintain clean code and prevent unforeseen issues. Utilizing SCSS modules is an effective strategy for dividing SCSS, reducing the bundle size, and encapsulating styles. Decomposing components not only simplifies component reuse but also enhances the accessibility and organization of utilities, types, mocks, and constants within a project. This structured approach allows developers to easily share and apply common resources across different components, promoting a more efficient and maintainable codebase.
+Please feel free to reach out for any clarifications or suggestions you may have.
 
 ## Getting Started
 
