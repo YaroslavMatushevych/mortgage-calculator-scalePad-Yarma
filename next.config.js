@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
+
 const nextConfig = {
   eslint: {
     dirs: ['src'],
@@ -6,6 +9,11 @@ const nextConfig = {
 
   reactStrictMode: true,
   swcMinify: true,
+
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src', 'styles')],
+    prependData: `@import "src/styles/variables.scss";`,
+  },
 
   // Uncoment to add domain whitelist
   // images: {
