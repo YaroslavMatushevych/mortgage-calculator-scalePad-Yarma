@@ -1,0 +1,48 @@
+@import 'src/styles/variables.scss';
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 8px 0px;
+  padding: 0px 16px;
+
+  .labelContainer {
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+    label {
+      display: block;
+      color: $primary-color;
+      margin-right: 20px;
+    }
+
+    span {
+      font-weight: 500;
+      line-height: 1.5;
+      margin-right: 10px;
+      width: 15px;
+      color: $dark-blue-color;
+    }
+  }
+
+  .inputAndErrorMessageContainer {
+    width: 50%;
+    position: relative;
+  }
+
+  .errorMessage {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(100%) translateY(0px);
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(216, 46, 21);
+  }
+}
