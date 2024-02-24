@@ -1,0 +1,59 @@
+@import 'src/styles/variables.scss';
+
+.input {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  width: 100%;
+  min-width: 350px;
+  height: 4rem;
+  line-height: 4rem;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0px 1.125rem 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: rgb(164, 180, 186);
+  font-size: $font-size-md;
+  color: $primary-color;
+  background-color: $white-color;
+  caret-color: $dark-blue-color;
+  appearance: none;
+  transition: color $standart-transition-time ease 0s,
+    border-color $standart-transition-time ease 0s,
+    background-color $standart-transition-time ease 0s,
+    box-shadow $standart-transition-time ease 0s;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:hover &::placeholder,
+  &:focus &::placeholder,
+  &:active &::placeholder {
+    border-color: $dark-blue-color;
+    color: $dark-blue-color;
+  }
+
+  &:hover {
+    box-shadow: rgba(192, 206, 211, 0.6) 0px 2px 7px 0px;
+  }
+
+  &:focus {
+    box-shadow: rgba(0, 181, 214, 0.4) 0px 0px 2px 2px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
