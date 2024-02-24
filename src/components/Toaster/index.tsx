@@ -2,11 +2,12 @@
 
 import React from 'react';
 import {
-  ToastContainer,
-  toast,
   Bounce,
+  toast,
+  ToastContainer,
   ToastContainerProps,
 } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 export const invokeToastNotification = (error: string) => {

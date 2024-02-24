@@ -2,8 +2,9 @@
 
 // Used native fetch instead of axios because of issues in server actions with testing
 // it's quite new feature so sometimes happens unexpected issues with supporting
-import { CalculatorState, mortgageCalculatorSchema } from '@/types';
 import { API_URL } from '@/constant/env';
+
+import { CalculatorState, mortgageCalculatorSchema } from '@/types';
 
 export async function calculateMortgageOnServer(data: CalculatorState) {
   const validationResult = mortgageCalculatorSchema.safeParse(data);

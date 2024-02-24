@@ -1,7 +1,8 @@
 global.fetch = jest.fn();
 
-import { calculateMortgageOnServer } from './_actions';
 import { API_URL } from '@/constant/env';
+
+import { calculateMortgageOnServer } from './_actions';
 
 beforeEach(() => {
   (global.fetch as jest.Mock).mockClear().mockReset();

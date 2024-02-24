@@ -27,7 +27,6 @@ interface FormInputProps extends FormInputType {
   };
   prefix?: string;
   placeholder?: string;
-  onChange?: () => {};
 }
 
 const InputForm: React.FC<FormInputProps> = ({

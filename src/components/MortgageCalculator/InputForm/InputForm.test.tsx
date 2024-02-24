@@ -1,7 +1,8 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { FormProvider, useForm } from 'react-hook-form';
+
 import InputForm from './';
-import { useForm, FormProvider } from 'react-hook-form';
 
 const options = [
   { value: 'option1', label: 'Option 1' },

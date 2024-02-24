@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { UseFormRegister } from 'react-hook-form';
+
 import styles from './Select.module.scss';
 
 interface Option {

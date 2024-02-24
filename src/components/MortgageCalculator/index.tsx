@@ -6,8 +6,14 @@ import { useForm } from 'react-hook-form';
 
 import styles from './MortgageCalculator.module.scss';
 
+import { formatCurrency } from '@/lib/utils';
+
 import Button from '@/components/Button';
 import InputForm from '@/components/MortgageCalculator/InputForm';
+import ToastContainerComponent, {
+  invokeToastNotification,
+} from '@/components/Toaster';
+
 import { calculateMortgageOnServer } from '@/app/_actions/_actions';
 import { formFields } from '@/constant/mockData';
 
@@ -16,10 +22,6 @@ import {
   CalculatorState,
   mortgageCalculatorSchema,
 } from '@/types';
-import { formatCurrency } from '@/lib/utils';
-import ToastContainerComponent, {
-  invokeToastNotification,
-} from '@/components/Toaster';
 
 const MortgageCalculator: React.FC = () => {
   const {

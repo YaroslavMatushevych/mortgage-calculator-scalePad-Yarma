@@ -1,7 +1,9 @@
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import MortgageCalculator from './';
+
 import * as actions from '@/app/_actions/_actions';
+
+import MortgageCalculator from './';
 
 jest.mock('@/app/_actions/_actions');
 
