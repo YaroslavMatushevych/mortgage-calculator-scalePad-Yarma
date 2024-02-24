@@ -1,0 +1,43 @@
+@import 'src/styles/variables.scss';
+
+.main {
+  width: 100%;
+  background-image: url('/images/background-circle.svg');
+  background-position: 20% -125rem;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 63px);
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  max-width: 850px;
+  padding: 30px;
+
+  .title {
+    margin: 50px 0px 14px;
+    font-size: 32px;
+  }
+
+  .description {
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .formTitle {
+    background-color: rgb(0, 114, 158);
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: rgb(192, 206, 211) 0px 2px 11px 0px;
+    text-align: center;
+
+    h2 {
+      color: $white-color;
+      padding: $padding-md $padding-xs;
+      font-weight: 400;
+      font-size: $font-size-sm;
+      line-height: 1.5;
+    }
+  }
+}
