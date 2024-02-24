@@ -24,6 +24,7 @@ export const navListData = [
 export const formFields = [
   {
     typeElement: 'input',
+    type: 'number',
     name: 'down_payment',
     label: 'Down Payment',
     prefix: '-',
@@ -31,6 +32,7 @@ export const formFields = [
   },
   {
     typeElement: 'input',
+    type: 'number',
     name: 'annual_interest_rate',
     label: 'Annual Interest Rate',
     prefix: '%',
@@ -40,6 +42,7 @@ export const formFields = [
     typeElement: 'select',
     name: 'amortization_period',
     label: 'Amortization Period',
+    type: 'number',
     options: [
       { value: '5', label: '5 years' },
       { value: '10', label: '10 years' },
@@ -53,8 +56,9 @@ export const formFields = [
     typeElement: 'select',
     name: 'payment_schedule',
     label: 'Payment Schedule',
+    type: undefined,
     options: [
-      { value: 'accelerated bi-weekly', label: 'Accelerated Bi-weekly' },
+      { value: 'accel-bi-weekly', label: 'Accelerated Bi-weekly' },
       { value: 'bi-weekly', label: 'Bi-weekly' },
       { value: 'monthly', label: 'Monthly' },
     ],
