@@ -24,7 +24,7 @@ import {
 } from '@/types';
 
 const MortgageCalculator: React.FC = () => {
-  // validation with zod or you is good. Still hesitate about usage and potencial complexity for new devs taking it
+  // validation with zod or you is good. Still hesitate about usage and potencial complexity for new devs taking React hook form
   const {
     register,
     handleSubmit,

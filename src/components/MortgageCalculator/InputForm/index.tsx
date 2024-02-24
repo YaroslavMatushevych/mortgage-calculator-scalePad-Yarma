@@ -11,7 +11,12 @@ interface Option {
   value: string | number;
   label: string;
 }
-
+// For the future refactor
+// 1. I'd get rid off any ts-ignore by TS types changes.
+// 2. Clean up props, order it.
+// 3. Remove any, particularly here it's ok but anyway it would be cleaner
+// 4. Refactor jsx structure. Decompose Label for instance
+// 5. Move option to types, we use it in a couple of places already
 type FormInputType =
   | React.SelectHTMLAttributes<HTMLSelectElement>
   | React.SelectHTMLAttributes<HTMLSelectElement>;
